@@ -8,7 +8,8 @@ const TableUsuario = () => {
     useEffect(() =>{
         const fetchUsersList = async () => {
             const {data} = await axios(
-                "http://localhost:8080/usuario"
+                //"http://localhost:8080/usuario"
+                "http://132.226.211.143:8080/usuario"
                 //"https://jsonplaceholder.typicode.com/users"
             );
             setUsers({documents:data});

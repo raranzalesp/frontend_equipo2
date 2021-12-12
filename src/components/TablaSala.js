@@ -8,7 +8,8 @@ const TableSala = () => {
     useEffect(() =>{
         const fetchSalasList = async () => {
             const {data} = await axios(
-                "http://localhost:8080/sala"
+                //"http://localhost:8080/sala"
+                "http://132.226.211.143:8080/sala"
                 //"https://jsonplaceholder.typicode.com/users"
             );
             setSalas({documents:data});
